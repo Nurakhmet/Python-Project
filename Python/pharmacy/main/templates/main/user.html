@@ -1,0 +1,11 @@
+{% extends "main/base.html" %}
+{% block title %}View Drug{% endblock %}
+
+{% block content%}
+	<h1>{{user.name}}</h1>
+	<ul>
+		{% for user in order.user_set.all %}
+			<li>{{order.id}}</li>
+		{% endfor %}
+	</ul>
+{% endblock %}
